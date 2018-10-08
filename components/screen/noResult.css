@@ -1,0 +1,13 @@
+.no-search-results-wrap {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.no-search-results-wrap > .no-results-msg {
+    margin: 0;
+    line-height: 1.8;
+    color: #888;
+}

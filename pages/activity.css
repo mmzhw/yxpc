@@ -1,0 +1,216 @@
+:global(.ql-size-12) {
+    font-size: 12px;
+}
+
+:global(.ql-size-14) {
+    font-size: 14px;
+}
+
+:global(.ql-size-16) {
+    font-size: 16px;
+}
+
+:global(.ql-size-18) {
+    font-size: 18px;
+}
+
+:global(.ql-size-20) {
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: 'LCDMono';
+    src: url('/static/font/lcdmb.eot');
+    src: url('/static/font/lcdmb.eot?#iefix') format('embedded-opentype'), url('/static/font/lcdmb.woff') format('woff'), url('/static/font/lcdmb.ttf') format('truetype'), url('/static/font/lcdmb.svg#SingleMaltaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.activity-body {
+    width: 100%;
+    background-position: 0 920px;
+    position: relative;
+}
+
+.clear {
+    clear: both;
+}
+
+.activity-headPic {
+    width: 100%;
+    height: 923px;
+    margin: 0 auto;
+    background-position: center top;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+}
+
+.activity-wrap {
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;;
+}
+
+.play-wrap {
+    position: relative;
+}
+
+.play-wrap .play-sources {
+    float: left;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.play-wrap .play-sources li {
+    display: inline-block;
+    padding: 0 20px;
+    height: 46px;
+    line-height: 46px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.play-wrap .play-sources li.play-sources-li-active {
+    height: 50px;
+    line-height: 54px;
+    margin-bottom: -4px;
+    margin-top: -4px;
+    color: #FABE00;
+}
+
+.play-wrap .play-countdown {
+    position: absolute;
+    width: 350px;
+    left: 50%;
+    text-align: center;
+    margin-left: -175px;
+    top: 20px;
+    z-index: 9;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fabe00;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-size: 24px;
+    line-height: 30px;
+    height: 30px;
+}
+
+.play-wrap .play-countdown span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #E70A0A;
+    border-radius: 100%;
+    margin-right: 8px;
+}
+
+.play-wrap .play-countdown span.play-countdown-before {
+    background: #FABE00;
+}
+
+.play-wrap .play-countdown span.play-countdown-after {
+    background: #999;
+}
+
+.play-wrap .play-countdown p {
+    display: inline-block;
+}
+
+.play-wrap .play-countdown p.special-font {
+    font-family: 'LCDMono';
+}
+
+.play-wrap .player-wrap {
+    clear: both;
+    width: 1170px;
+    min-height: 718px;
+    padding: 5px 5px 0;
+    background: #000;
+}
+
+.play-info-wrap {
+    float: left;
+    background: #fff;
+    padding: 20px;
+    font-size: 12px;
+    width: 1140px;
+    line-height: 20px;
+}
+
+.play-info-wrap-fold {
+    color: #222;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.interested-bg {
+    background: #fff;
+}
+
+.interested-wraper {
+    float: right;
+    height: 40px;
+    width: 148px;
+    border: 1px solid #ffc825;
+    border-radius: 35px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.interested-wraper div {
+    width: 22px;
+    height: 22px;
+    float: left;
+    overflow: hidden;
+    margin: 9px 10px 9px 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.interested-wraper div.heart {
+    background-image: url("/static/image/heart.png");
+    transform: scalex(-1);
+}
+
+.interested-wraper div.hearted {
+    background-image: url("/static/image/hearted.png");
+    width: 24px;
+    height: 24px;
+    margin: 8px 10px 8px 28px;
+}
+
+.interested-wraper div.back {
+    background-image: url("/static/image/back.png");
+    width: 24px;
+    height: 24px;
+    margin: 8px 10px 8px 18px;
+}
+
+.interested-wraper span {
+    float: left;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.foot {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.foot > img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.activity-wrap a[class^="subVideoName-"] {
+    margin-bottom: 0 !important;
+}

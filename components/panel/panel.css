@@ -1,0 +1,223 @@
+.panel-wrap {
+    position: relative;
+    width: 260px;
+    height: 100%;
+    padding: 20px;
+    background: #222;
+}
+
+.panel-wrap.panel-wrap-fold {
+    width: 0;
+    padding: 0;
+    height: 533px;
+}
+
+.panel-wrap.panel-wrap-fold .panel-title-wrap,
+.panel-wrap.panel-wrap-fold .panel-body {
+    visibility: hidden;
+}
+
+.panel-wrap.panel-wrap-fold .panel-fold {
+    transform: rotate(180deg);
+    left: -8px;
+}
+
+.panel-wrap.panel-wrap-fold .panel-fold i {
+    margin-left: -4px;
+}
+
+.panel-wrap.panel-full {
+    width: 0;
+    padding: 0;
+}
+
+.panel-wrap.panel-full.panel-full-uncollapsed {
+    width: 340px;
+    padding: 20px;
+    opacity: .8;
+    height: calc(-10%);
+    top: 50px;
+}
+
+.panel-wrap.panel-full .panel-serial-ul {
+    width: 318px !important;
+}
+
+.panel-wrap .panel-fold {
+    position: absolute;
+    background: #373742;
+    width: 8px;
+    left: 0;
+    height: 44px;
+    line-height: 50px;
+    top: 223px;
+    text-align: center;
+    cursor: pointer;
+    color: #B0B0B0;
+    border-radius: 0 3px 3px 0;
+}
+
+.panel-wrap .panel-fold i {
+    border-right: 1px solid #64647A;
+    border-bottom: 1px solid #64647A;
+    transform: rotate(-45deg);
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-left: -2px;
+    vertical-align: super;
+}
+
+.panel-wrap .panel-title-wrap {
+    font-size: 22px;
+}
+
+.panel-wrap .panel-title-wrap .panel-title-intro {
+    width: 100%;
+}
+
+.panel-wrap .panel-title-wrap .panel-title-intro img {
+    width: 120px;
+    height: 68px;
+    display: inline-block;
+}
+
+.panel-wrap .panel-title-wrap .panel-title-intro .panel-title-name {
+    display: inline-block;
+    width: 130px;
+    margin-left: 10px;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.panel-wrap .panel-title-wrap .panel-title-intro .panel-title-name span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    color: #FFBD00;
+    margin: 0;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+.panel-wrap .panel-title-wrap .panel-title-intro .panel-title-name p {
+    color: #999999;
+    height: 47px;
+    overflow: auto;
+    width: 150px;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.panel-wrap .panel-title-wrap h2 {
+    color: #FFF;
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.panel-wrap .panel-title-wrap span {
+    display: block;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.panel-wrap .panel-body {
+    overflow: hidden;
+    height: 442px;
+    padding: 10px 0;
+}
+
+.panel-wrap .panel-body ul {
+    margin: 0;
+    width: 318px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.panel-wrap .panel-body ul.panel-serial-ul {
+    width: 280px;
+}
+
+.panel-wrap .panel-body ul li {
+    cursor: pointer;
+}
+
+.panel-wrap .panel-body .panel-serial {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 2px;
+    color: #666;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.panel-wrap .panel-body .panel-serial:hover {
+    background: #96760F;
+    color: #FFF;
+}
+
+.panel-wrap .panel-body .panel-serial.panel-serial-active {
+    background: #1B1B1F;
+    color: #FFBD00;
+    cursor: default;
+}
+
+.panel-wrap .panel-body .panel-variety {
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.panel-wrap .panel-body .panel-variety .panel-variety-img {
+    float: left;
+    position: relative;
+}
+
+.panel-wrap .panel-body .panel-variety .panel-variety-img img {
+    border: 3px solid transparent;
+    width: 140px;
+    height: 78px;
+}
+
+.panel-wrap .panel-body .panel-variety .panel-variety-img span {
+    position: absolute;
+    right: 10px;
+    bottom: 13px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    padding: 2px 4px;
+    color: #FFF;
+    font-size: 12px;
+}
+
+.panel-wrap .panel-body .panel-variety p {
+    float: left;
+    width: 105px;
+    height: 84px;
+    margin-left: 8px;
+    line-height: 1.6;
+    color: #FFF;
+}
+
+.panel-wrap .panel-body .panel-variety.panel-variety-active {
+    cursor: default;
+}
+
+.panel-wrap .panel-body .panel-variety.panel-variety-active img {
+    border-color: #FABE00;
+}
+
+.panel-wrap .panel-body .panel-variety.panel-variety-active p {
+    color: #FABE00;
+}

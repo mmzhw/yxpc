@@ -1,0 +1,99 @@
+.clear {
+    clear: both;
+}
+
+.footer {
+    width: 100%;
+}
+
+.footerContent {
+    width: 1180px;
+    margin: 60px auto 0;
+}
+
+.footerContent ul:nth-child(1) {
+    margin-left: 85px;
+}
+
+.footerContent ul {
+    float: left;
+    width: 170px;
+    margin: 0 25px;
+}
+
+.footerContent ul p {
+    font-size: 18px;
+    color: #1A1A1A;
+    line-height: 25px;
+    margin: 20px 0 20px 0;
+    font-weight: bold;
+}
+
+.footerContent ul li {
+    line-height: 25px;
+}
+
+.footerContent ul li a {
+    font-size: 12px;
+    color: #808080;
+}
+
+.footerContent ul li:hover a {
+    color: #FFBD00;
+}
+
+.footerContent ul.nav li,
+.footerContent ul.city li {
+    float: left;
+    width: 80px;
+}
+
+.footerContent ul.download {
+    width: 190px;
+}
+
+.footerContent ul.download > a {
+    width: 40px;
+    float: left;
+    margin-right: 50px;
+    cursor: pointer;
+    display: block;
+}
+
+.footerContent ul.download > a i {
+    width: 100%;
+    height: 70px;
+    display: block;
+}
+
+.footerContent ul.download > a:nth-child(2) i {
+    background: url("/static/image/HomePage/iphone.png") top no-repeat;
+}
+
+.footerContent ul.download > a:nth-child(3) i {
+    background: url("/static/image/HomePage/android.png") top no-repeat;
+}
+
+.footerContent ul.download > a:nth-child(2):hover i {
+    background: url("/static/image/HomePage/iphone_hover.png") top no-repeat;
+}
+
+.footerContent ul.download > a:nth-child(3):hover i {
+    background: url("/static/image/HomePage/android_hover.png") top no-repeat;
+}
+
+.footerContent ul.download > a span {
+    font-size: 12px;
+    color: #808080;
+}
+
+.footerBottom {
+    margin: 40px 0;
+}
+
+.footerBottom p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    color: #999;
+}

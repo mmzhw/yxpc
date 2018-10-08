@@ -1,0 +1,23 @@
+.main .screenHeader {
+    background: #F9F9F9;
+    padding: 20px 0;
+}
+
+.main .content-wrap {
+    min-height: 400px;
+    position: relative;
+    width: 1180px;
+    margin: 0 auto;
+
+}
+
+.main .content-wrap h6 {
+    margin: 25px 0;
+    color: #888;
+    font-weight: 400;
+    float: right;
+}
+
+.page-wrap {
+    text-align: center;
+}

@@ -1,0 +1,47 @@
+{
+  "name": "hello-next",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "build:dev": "NODE_ENV=development next build",
+    "start": "NODE_ENV=production pm2 start server.js --name pc -i max",
+    "start:test": "pm2 start server.js --name pc -i max",
+    "reStart": "pm2 delete pc pm2 start server.js --name pc -i max",
+    "reStart:test": "pm2 delete pc pm2 start server.js --name pc -i 1",
+    "stop": "pm2 delete pc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "analyze": "ANALYZE=1 next build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@zeit/next-css": "^0.2.0",
+    "axios": "^0.18.0",
+    "babel-eslint": "^8.2.3",
+    "babel-polyfill": "^6.26.0",
+    "browser-detect": "^0.2.27",
+    "classnames": "^2.2.5",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.8.2",
+    "koa": "^2.5.1",
+    "koa-router": "^7.4.0",
+    "lodash": "^4.17.10",
+    "m3u8-parser": "^4.2.0",
+    "next": "^6.0.3",
+    "postcss-cssnext": "^3.1.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "setprototypeof": "^1.1.0",
+    "swiper": "^4.2.6",
+    "video.js": "6.2.7"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 10 versions",
+    "Firefox ESR",
+    "not ie < 8"
+  ]
+}

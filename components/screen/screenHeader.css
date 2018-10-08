@@ -1,0 +1,52 @@
+.condition-wrap {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.content-wrap h6 {
+    color: #888;
+    font-weight: 400;
+}
+
+.single-condition > span {
+    /*text-align: right;*/
+
+    display: table-cell;
+    width: 80px;
+}
+
+.single-condition > ul {
+    font-size: 14px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    width: 1020px;
+}
+
+.single-condition span.more {
+    cursor: pointer;
+    opacity: 0.5;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.list-item {
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 10px;
+    text-align: center;
+    width: 80px;
+    line-height: 30px;
+    border-radius: 15px;
+    /*overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;*/
+
+}
+
+.list-item-active {
+    background-color: #FABE00;
+    color: #FFF;
+}

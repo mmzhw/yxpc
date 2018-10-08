@@ -1,0 +1,16 @@
+.subject {
+    width: 100%;
+}
+
+.subject > .subject-content {
+    box-shadow: 0 0 6px 0 #ededed;
+    width: 1180px;
+    min-height: 500px;
+    margin: 20px auto;
+    background-color: #FFF;
+    position: relative;
+}
+
+.subject > .subject-content > .subject-list .item-wrap {
+    margin: 0 40px;
+}

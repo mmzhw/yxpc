@@ -1,0 +1,66 @@
+.search {
+    width: 100%;
+}
+
+.search > .search-content {
+    width: 1180px;
+    min-height: 500px;
+    margin: 0 auto;
+    background-color: #FFF;
+    position: relative;
+}
+
+.search > .search-content > .message {
+    position: relative;
+    color: #888;
+    font-size: 14px;
+    line-height: 50px;
+    margin-left: 49px;
+}
+
+.search > .search-content > .message > .keyword {
+    color: #FFC31B;
+}
+
+.search > .search-content > .video-list {
+    margin: -30px 0 0 0;
+}
+
+.search > .search-content > .video-list > .item-wrap {
+    margin: 0 40px;
+}
+
+.search > .search-content > .video-list > .item-wrap:not(:last-child) {
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.search > .search-content > .shortvideo-list {
+    border-top: 1px solid #E8E8E8;
+}
+
+.search > .search-content > .shortvideo-list > .item2-wrap {
+    float: left;
+    margin-left: 14.5px;
+    margin-top: 20px;
+    height: 140px;
+}
+
+.search > .search-content > .page-wrap {
+    line-height: 140px;
+    text-align: center;
+    width: 100%;
+}
+
+.search > .search-content > .no-search-results-wrap {
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.search > .search-content > .no-search-results-wrap > .no-results-msg {
+    margin: 0;
+    line-height: 1.8;
+    color: #888;
+}

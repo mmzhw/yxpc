@@ -1,0 +1,20 @@
+.variety-wrap {
+    width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.variety-wrap > span {
+    font-size: 16px;
+    margin-left: 70px;
+}
+
+.variety-wrap .variety-list {
+    margin-top: 10px;
+    padding: 15px 50px 15px 70px;
+    border-top: 1px solid #E8E8E8;
+}
+
+.page-wrap {
+    text-align: center;
+}

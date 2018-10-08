@@ -1,0 +1,241 @@
+.clear {
+    clear: both;
+}
+
+input {
+    border: 0;
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+
+    color: #fff;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+
+    color: #fff;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+
+    color: #fff;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+
+    color: #fff;
+}
+
+.searchWrapper {
+    width: 394px;
+    height: 40px;
+    margin: 5px 0;
+}
+
+.searchWrapper .leftInput {
+    float: left;
+    width: 300px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.28);
+    position: relative;
+}
+
+.searchWrapper .leftInput input {
+    width: 100%;
+    height: calc(98%);
+    border: none;
+    background: none;
+    text-indent: 10px;
+    color: #fff;
+}
+
+.searchWrapper .tipboxShow {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 300px;
+    background: #FFFFFF;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18);
+}
+
+.searchWrapper .hotList {
+    padding-bottom: 10px;
+}
+
+.searchWrapper .hotList h2 {
+    height: 28px;
+    font-size: 14px;
+    font-family: PingFangSC-Medium;
+    color: #999999;
+    line-height: 28px;
+    padding: 0 10px;
+    margin: 0;
+    padding-top: 3px;
+    font-weight: normal;
+}
+
+.searchWrapper .hotList ul {
+    width: 100%;
+    margin: 0;
+}
+
+.searchWrapper .hotList ul li {
+    padding: 0 10px;
+    height: 32px;
+}
+
+.searchWrapper .hotList ul li:hover {
+    background: #f5f5f5;
+}
+
+.searchWrapper .hotList ul li i {
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    margin: 5px 10px 5px 0;
+    background: #cacaca;
+    float: left;
+    color: #fff;
+    font-style: normal;
+    border-radius: 2px;
+}
+
+.searchWrapper .hotList ul li:nth-child(1) i {
+    background: #ff0d2a;
+}
+
+.searchWrapper .hotList ul li:nth-child(2) i {
+    background: #ff910d;
+}
+
+.searchWrapper .hotList ul li:nth-child(3) i {
+    background: #ffc602;
+}
+
+.searchWrapper .hotList ul li span {
+    float: left;
+    font-size: 14px;
+    line-height: 32px;
+    color: #242424;
+    width: calc(68%);
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.searchWrapper .historyWrap {
+    margin-top: 10px;
+}
+
+.searchWrapper .historyWrap .clearIcon {
+    float: right;
+    cursor: pointer;
+}
+
+.searchWrapper .historyWrap .clearIcon > i {
+    float: left;
+    width: 18px;
+    height: 30px;
+    background: url("/static/image/search/clear.png") no-repeat center;
+}
+
+.searchWrapper .historyWrap .clearIcon > span {
+    float: left;
+    font-size: 12px;
+    color: #757575;
+    margin: 0;
+    line-height: 28px;
+    padding-right: 10px;
+}
+
+.searchWrapper .historyWrap .clearIcon:hover i {
+    background: url("/static/image/search/clear-hover.png") no-repeat center;
+}
+
+.searchWrapper .historyWrap .clearIcon:hover span {
+    color: #242424;
+}
+
+.searchWrapper .historyWrap h3 {
+    float: left;
+    font-size: 14px;
+    color: #999999;
+    margin: 0;
+    line-height: 28px;
+    padding-left: 10px;
+    font-weight: normal;
+}
+
+.searchWrapper .historyWrap ul {
+    margin: 0 0 0 10px;
+}
+
+.searchWrapper .historyWrap ul li {
+    margin: 0 10px 0 0;
+    padding: 0;
+    display: inline-block;
+    width: 135px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #f3f3f3;
+    color: #888;
+    text-indent: 10px;
+    cursor: pointer;
+}
+
+.searchWrapper .historyWrap ul li span {
+    width: 135px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    float: left;
+    border-radius: 2px;
+}
+
+.searchWrapper .historyWrap ul li i {
+    padding-top: 1px;
+    float: right;
+    cursor: pointer;
+    font-size: 7px;
+    color: #b4b2b3;
+    padding-right: 10px;
+}
+
+.searchWrapper .rightClick {
+    float: right;
+    width: 94px;
+    height: 40px;
+    background: -webkit-linear-gradient(left, #ffbd00, #ff9100);
+    background: -o-linear-gradient(left, #ffbd00, #ff9100);
+    background: -moz-linear-gradient(left, #ffbd00, #ff9100);
+    background: linear-gradient(left, #ffbd00, #ff9100);
+    cursor: pointer;
+}
+
+.searchWrapper .rightClick:hover {
+    background: #ff9100;
+}
+
+.searchWrapper .rightClick img {
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin: 11px 11px 11px 20px;
+}
+
+.searchWrapper .rightClick span {
+    font-size: 14px;
+    font-family: PingFangSC-Medium;
+    color: #ffffff;
+    float: left;
+    line-height: 40px;
+    font-weight: normal;
+}

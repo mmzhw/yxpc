@@ -1,0 +1,14 @@
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: #FFCE33;
+    width: 45px;
+    height: 50px;
+}
+
+.swiper-button-prev {
+    background-image: url('/static/image/HomePage/arrow-left.png');
+}
+
+.swiper-button-next {
+    background-image: url('/static/image/HomePage/arrow-right.png');
+}

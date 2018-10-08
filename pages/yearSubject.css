@@ -1,0 +1,535 @@
+.clear {
+    clear: both;
+}
+
+/* for Chrome */
+.inner-container::-webkit-scrollbar {
+    display: none;
+}
+
+.yearWrapper {
+    font-family: 'PingFangSC-Light';
+}
+
+.activityIndex {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: top 1s;
+}
+
+.activityIndex > div {
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    z-index: 10;
+    bottom: 16px;
+    left: 50%;
+    margin-left: -100px;
+    cursor: pointer;
+}
+
+.activity-content {
+    background: #2C2846;
+}
+
+.activity-right .headWrapper {
+    width: calc(100% - 80px);
+    background-color: #1a1a1a;
+    padding: 0 40px;
+}
+
+.activity-left {
+    background: #2C2846;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    transition: left 1s;
+    width: 280px;
+    overflow: hidden;
+}
+
+.activity-left > ul {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.activity-left > div {
+    height: 100%;
+    position: absolute;
+    width: 20px;
+    right: -20px;
+    top: 0;
+    cursor: pointer;
+}
+
+@keyframes fontColor {
+    from {
+        color: #fff;
+    }
+    to {
+        color: rgb(253, 206, 2);
+    }
+}
+
+.activity-left > div > i {
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    font-family: 'SimHei';
+    font-style: normal;
+    font-size: 12px;
+    animation: fontColor 0.3s infinite;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+.activity-left ul {
+    width: calc(100% - 20px);
+    padding: 0 20px;
+}
+
+.activity-left ul li {
+    font-family: 'PingFangSC-Light';
+    text-align: left;
+    color: #fff;
+    cursor: pointer;
+}
+
+.activity-left ul li.currentFont {
+    color: #FDCE02;
+}
+
+.activity-left ul li:hover {
+    color: #FDCE02;
+}
+
+.activity-right {
+    float: right;
+    background: #fff;
+    overflow: hidden;
+    width: 100%;
+    transition: width 1s;
+}
+
+.activity-right > img {
+    width: 100%;
+}
+
+.activity-right > ul li {
+    width: 100%;
+    position: relative;
+}
+
+.activity-right > ul li .leftLine {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.activity-right > ul li .startPlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.activity-right > ul li .startPlay > i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    background: url("/static/image/newSubject/arr.png") no-repeat center;
+    background-size: auto 100%;
+    border-radius: 0;
+}
+
+.activity-right > ul li > div > i {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    z-index: 31;
+}
+
+.activity-right > ul li i img {
+    width: 100%;
+    height: 100%;
+}
+
+.activity-right > ul li .text h3 {
+    font-family: 'SimHei';
+    margin: 0;
+}
+
+.activity-right > ul li .TCircular {
+    border-bottom-right-radius: 0;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+
+.activity-right > ul li .CRCircular {
+    float: right;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.activity-right > ul li .CLCircular {
+    float: left;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.activity-right > ul li .BLCircular {
+    border-top-right-radius: 0;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+
+.activity-right > ul li .BRCircular {
+    border-top-left-radius: 0;
+    float: right;
+    position: relative;
+    cursor: pointer;
+}
+
+.activity-right > ul li i .timeWrapper {
+    position: absolute;
+    z-index: 11;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(223, 192, 145, 0.8);
+    font-family: 'PingFangSC-Medium';
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-style: normal;
+}
+
+.activity-right > ul li i.timeI {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 7;
+}
+
+.videoWrapper {
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+}
+
+.videoWrapper > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.activity-right > ul li .TMask {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    bottom: 0;
+    background-color: #fff;
+}
+
+.activity-right > ul li .BLMask {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 0;
+    background-color: #fff;
+}
+
+.activity-right > ul li .BRMask {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    background-color: #fff;
+}
+
+.activity-right > ul li .text {
+    float: left;
+    position: relative;
+}
+
+.activity-left ul li p {
+    font-style: normal;
+}
+
+@media screen and (min-width: 1680px) {
+
+    .activity-left ul li {
+        font-size: 22px;
+        margin: 30px 0;
+    }
+
+    .activity-left ul li p {
+        line-height: 35px;
+    }
+
+    .activity-left ul li p:nth-child(1) {
+        font-size: 28px;
+        font-family: 'SimHei';
+    }
+
+    .activity-right > ul {
+        margin: 40px;
+    }
+
+    .activity-right > ul li {
+        height: calc(100% - 16px);
+        margin-top: -4px;
+    }
+
+    .activity-right > ul li .leftLine {
+        border-bottom: 4px solid #E0C294;
+        width: calc(100% - 320px);
+        margin-left: 160px;
+    }
+
+    .activity-right > ul li .startPlay {
+        width: 280px;
+        height: 280px;
+        margin: 20px;
+        border-radius: 140px;
+    }
+
+    .activity-right > ul li .startPlay > i {
+        width: 50px;
+        height: 50px;
+        margin: -24px 0 0 -24px;
+    }
+
+    .activity-right > ul li > div > i {
+        width: 280px;
+        height: 280px;
+        margin: 20px;
+        border-radius: 280px;
+    }
+
+    .activity-right > ul li .text {
+        width: calc(100% - 400px);
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+
+    .activity-right > ul li .text h3 {
+        font-size: 40px;
+        line-height: 80px;
+    }
+
+    .activity-right > ul li .text p {
+        font-size: 28px;
+        line-height: 56px;
+    }
+
+    .activity-right > ul li .TCircular {
+        border: 4px solid #E0C294;
+        border-radius: 160px;
+        width: 320px;
+        height: 320px;
+        border-bottom-right-radius: 0;
+    }
+
+    .activity-right > ul li .CRCircular {
+        border: 4px solid #E0C294;
+        border-radius: 0 160px 160px 0;
+        width: 320px;
+        height: 320px;
+        border-left: 0;
+    }
+
+    .activity-right > ul li .CLCircular {
+        border: 4px solid #E0C294;
+        border-radius: 160px 0 0 160px;
+        width: 320px;
+        height: 320px;
+        border-right: 0;
+    }
+
+    .activity-right > ul li .BLCircular {
+        border: 4px solid #E0C294;
+        border-radius: 160px;
+        width: 320px;
+        height: 320px;
+    }
+
+    .activity-right > ul li .BRCircular {
+        border: 4px solid #E0C294;
+        border-radius: 320px;
+        width: 320px;
+        height: 320px;
+    }
+
+    .activity-right > ul li i .timeWrapper {
+        height: 60px;
+        font-size: 28px;
+        line-height: 60px;
+    }
+
+    .activity-right > ul li .TMask {
+        width: 168px;
+        height: 278px;
+    }
+
+    .activity-right > ul li .BLMask {
+        width: 168px;
+        height: 278px;
+    }
+
+    .activity-right > ul li .BRMask {
+        left: -8px;
+        width: 168px;
+        height: 278px;
+    }
+}
+
+@media screen and (max-width: 1680px) {
+
+    .activity-left ul li {
+        font-size: 18px;
+        margin: 18px 0;
+    }
+
+    .activity-left ul li p {
+        line-height: 25px;
+    }
+
+    .activity-left ul li p:nth-child(1) {
+        font-size: 22px;
+        font-family: 'SimHei';
+    }
+
+    .activity-right > ul {
+        margin: 20px;
+    }
+
+    .activity-right > ul li {
+        height: calc(100% - 8px);
+        margin-top: -2px;
+    }
+
+    .activity-right > ul li .leftLine {
+        border-bottom: 2px solid #E0C294;
+        width: calc(100% - 160px);
+        margin-left: 80px;
+    }
+
+    .activity-right > ul li .startPlay {
+        width: 140px;
+        height: 140px;
+        margin: 10px;
+        border-radius: 70px;
+    }
+
+    .activity-right > ul li .startPlay > i {
+        width: 25px;
+        height: 25px;
+        margin: -12px 0 0 -12px;
+    }
+
+    .activity-right > ul li > div > i {
+        width: 140px;
+        height: 140px;
+        margin: 10px;
+        border-radius: 140px;
+    }
+
+    .activity-right > ul li .text {
+        width: calc(100% - 200px);
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .activity-right > ul li .text h3 {
+        font-size: 23px;
+        line-height: 46px;
+    }
+
+    .activity-right > ul li .text p {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .activity-right > ul li .TCircular {
+        border: 2px solid #E0C294;
+        border-radius: 80px;
+        width: 160px;
+        height: 160px;
+        border-bottom-right-radius: 0;
+    }
+
+    .activity-right > ul li .CRCircular {
+        border: 2px solid #E0C294;
+        border-radius: 0 80px 80px 0;
+        width: 160px;
+        height: 160px;
+        border-left: 0;
+    }
+
+    .activity-right > ul li .CLCircular {
+        border: 2px solid #E0C294;
+        border-radius: 80px 0 0 80px;
+        width: 160px;
+        height: 160px;
+        border-right: 0;
+    }
+
+    .activity-right > ul li .BLCircular {
+        border: 2px solid #E0C294;
+        border-radius: 80px;
+        width: 160px;
+        height: 160px;
+    }
+
+    .activity-right > ul li .BRCircular {
+        border: 2px solid #E0C294;
+        border-radius: 160px;
+        width: 160px;
+        height: 160px;
+    }
+
+    .activity-right > ul li i .timeWrapper {
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .activity-right > ul li .TMask {
+        width: 84px;
+        height: 139px;
+    }
+
+    .activity-right > ul li .BLMask {
+        width: 84px;
+        height: 139px;
+    }
+
+    .activity-right > ul li .BRMask {
+        left: -4px;
+        width: 84px;
+        height: 139px;
+    }
+}

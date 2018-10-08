@@ -1,0 +1,70 @@
+.item {
+    width: 180px;
+    cursor: pointer;
+}
+
+.item > .img-wrap {
+    width: 100%;
+    height: 102px;
+    position: relative;
+}
+
+.item > .img-wrap .duration {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 2px;
+    background: #888;
+    color: #FFF;
+    text-align: center;
+}
+
+.item > .img-wrap > .clarity,
+.item > .img-wrap > .sign {
+    position: absolute;
+    border-radius: 2px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFF;
+    width: 36px;
+    height: 20px;
+}
+
+.item > .img-wrap > .clarity {
+    background-color: #4DC6FF;
+    left: 6px;
+    top: 6px;
+}
+
+.item > .img-wrap > .sign {
+    background-color: #FF6D25;
+    right: 6px;
+    top: 6px;
+}
+
+.item > .img-wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+.item > .text-wrap > .name,
+.item > .text-wrap > .sub-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.item > .text-wrap > .name {
+    font-size: 14px;
+    color: #222;
+    line-height: 1.6;
+}
+
+.item > .text-wrap > .sub-name {
+    font-size: 12px;
+    color: #888;
+}

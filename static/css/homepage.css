@@ -1,0 +1,244 @@
+body {
+    font-family: Microsoft YaHei;
+}
+
+.banner {
+    ` width: 100%;
+    /* background-color: black; */
+}
+
+.cursors-wrap {
+    position: relative;
+    width: 1180px;
+    /* height: 100%; */
+    margin: 0 auto;
+}
+
+.banner-cursors {
+    position: absolute;
+    width: 243px;
+    overflow: hidden;
+    border-radius: 2px;
+    top: 40px;
+    right: 0;
+    z-index: 100;
+    background: url("../image/HomePage/banner_bg.png") center no-repeat;
+    height: 440px;
+    justify-content: center; /*子元素水平居中*/
+    align-items: center; /*子元素垂直居中*/
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+}
+
+.cursor {
+    width: 100%;
+    height: 40px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.cursor:last-child {
+    border-bottom: none;
+}
+
+.cursor-content {
+    display: table-cell;
+    width: 100%;
+    overflow: hidden;
+    vertical-align: middle;
+    font-size: 14px;
+    white-space: nowrap;
+    color: #242424;
+    /*overflow: hidden;
+    text-overflow: ellipsis;*/
+}
+
+.cursor-show {
+    display: inline-block;
+    width: 213px;
+}
+
+.cursor.single .cursor-content {
+    line-height: 40px;
+}
+
+.cursor.title {
+    height: 88px;
+}
+
+.cursor.title .cursor-content {
+    height: 88px;
+}
+
+.cursor.title .cursor-content .cursor-hid {
+    display: block;
+    width: 216px;
+    overflow: hidden;
+}
+
+.cursor.title .cursor-content .title {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.cursor.title .cursor-content .content {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.banner-cursors .cursor.z-active {
+    background-color: #fff;
+}
+
+.banner-cursors .cursor.z-active > span > span:nth-child(1) {
+    color: #FFBD00;
+    font-size: 24px;
+}
+
+.banner-cursors .cursor.z-active > span > span:nth-child(2) {
+    color: #808080;
+}
+
+.banner-cursors .cursor.z-active .cursor-content {
+    color: #222222;
+}
+
+.swiper-container.banner .banner-slider {
+    display: block;
+    width: 100%;
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center 0;
+    opacity: 0;
+}
+
+.indexNav {
+    width: 100%;
+    height: 36px;
+    background: rgba(26, 26, 26, 0.4);
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+}
+
+.indexNav > div {
+    width: 1180px;
+    margin: auto;
+}
+
+.indexNav ul {
+    margin: 0;
+    float: left;
+}
+
+.indexNav ul li {
+    float: left;
+    font-size: 14px;
+    line-height: 36px;
+    cursor: pointer;
+    padding-right: 46px;
+}
+
+.indexNav ul li a {
+    color: #FFFFFF;
+}
+
+.indexNav ul li:hover a {
+    color: #FFBD00;
+}
+
+.indexNav .navAll {
+    float: right;
+}
+
+.indexNav > div > div > img {
+    width: 16px;
+    height: 16px;
+    margin: 10px;
+    float: left;
+}
+
+.indexNav .navAll {
+    padding-right: 30px;
+}
+
+.indexNav > div > div span {
+    float: left;
+    font-size: 14px;
+    line-height: 36px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.indexNav > div > div:hover span {
+    color: #FFBD00;
+}
+
+.indexNav > div > div span a {
+    color: #FFFFFF;
+}
+
+.indexNav > div > div:hover span a {
+    color: #FFBD00;
+}
+
+.indexNav .appDownload {
+    float: right;
+    position: relative;
+}
+
+.indexNav .appDownload .appInfo {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    height: 255px;
+    width: 201px;
+    padding-top: ;
+}
+
+.indexNav .appDownload:hover .appInfo {
+    display: block;
+}
+
+.indexNav .appDownload .appInfo > div {
+    position: absolute;
+    height: 240px;
+    background-color: #fabe00;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+}
+
+.indexNav .appDownload .appInfo img {
+    width: 180px;
+    height: 180px;
+    margin: 10px 10px 0 10px;
+}
+
+.indexNav .appDownload .appInfo p {
+    text-align: center;
+    color: #222;
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+.indexNav .appDownload .appInfo i {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 16px solid #FABE00;
+    position: absolute;
+    right: 30px;
+    top: 0;
+}

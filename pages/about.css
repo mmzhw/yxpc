@@ -1,0 +1,407 @@
+.main-content {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.content-title {
+    color: #757575;
+    position: relative;
+    display: inline-block;
+}
+
+.content-title::first-letter {
+    text-transform: uppercase;
+    font-size: 80px;
+}
+
+.content-title .text-cover-bg {
+    background: #FABE00;
+    height: 36px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.content-title span {
+    position: relative;
+}
+
+.content-title .text {
+    font-size: 20px;
+}
+
+.content-title .text-eng {
+    position: relative;
+    font-size: 24px;
+    margin-right: 7px;
+    line-height: 1;
+}
+
+.cube {
+    height: 30px;
+    width: 30px;
+    background: #6F6F6F;
+    margin-left: 73px;
+}
+
+.header {
+    background: url('/static/image/about/top-bg.jpg') no-repeat center center;
+    background-size: 100% auto;
+    letter-spacing: 20px;
+    height: 480px;
+    text-align: center;
+}
+
+.header .title {
+    background: #FABE00;
+    color: #FFF;
+    font-size: 30px;
+    line-height: 42px;
+    display: inline-block;
+    margin-top: 169px;
+    padding: 8px 17px 0 37px;
+}
+
+.header .subtitle {
+    color: #FFF;
+    font-size: 20px;
+    margin-top: 71px;
+}
+
+.section-title {
+    color: #757575;
+    font-size: 20px;
+}
+
+.white-bg {
+    background: #FFF;
+}
+
+.iblock {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.area-left {
+    float: left;
+}
+
+.area-right {
+    float: right;
+}
+
+.us-area {
+    color: #6F6F6F;
+    font-size: 14px;
+}
+
+.us-area .container {
+    padding-left: 140px;
+    padding-top: 71px;
+    margin: 0 auto;
+}
+
+.us-area .desc {
+    width: 370px;
+    margin-left: 10px;
+}
+
+.us-area .desc p {
+    line-height: 18px;
+}
+
+.about .simulator {
+    margin-left: 95px;
+}
+
+.about .simulator img {
+    width: 345px;
+}
+
+.about .download {
+    text-align: center;
+    margin-left: 40px;
+}
+
+.about .download .download-qr {
+    width: 104px;
+    display: inline-block;
+    margin-top: 114px;
+}
+
+.about .download .iphone {
+    margin-top: 23px;
+}
+
+.about .download .android {
+    margin-top: 14px;
+}
+
+.about .download .download-btn {
+    display: block;
+}
+
+.about .download .download-btn img {
+    width: 138px;
+}
+
+.cooperate {
+    padding: 40px 205px 76px 190px;
+}
+
+.cooperate .main-content {
+    width: 1045px;
+}
+
+.cooperate .cooperate-desc {
+    color: #4A4A4A;
+    margin-top: 50px;
+}
+
+.cooperate .cooperate-desc .hr-line {
+    background: #6F6F6F;
+    height: 206px;
+    width: 14px;
+    margin-left: 13px;
+    display: inline-block;
+}
+
+.cooperate .cooperate-desc .cooperate-item {
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
+}
+
+.cooperate .cooperate-desc .cooperate-item p {
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.cooperate .cooperate-desc .cooperate-item p:not(:first-child) {
+    margin-top: 10px;
+}
+
+.cooperate ul li {
+    display: inline-block;
+    background-color: #FFF;
+    width: 250px;
+    height: 40px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 40px;
+    color: #6F6F6F;
+    font-size: 14px;
+}
+
+.join-us {
+    padding-bottom: 113px;
+}
+
+.join-us .content-text {
+    margin-top: 76px;
+}
+
+.join-us .jd-detail {
+    width: 450px;
+    display: inline-block;
+    margin-top: 99px;
+    background: #FFF;
+    padding: 16px 25px 34px;
+    color: #4A4A4A;
+    box-sizing: border-box;
+}
+
+.join-us .jd-detail .jd-title {
+    color: #F1B701;
+    font-size: 16px;
+}
+
+.join-us .jd-detail .jd-subtitle {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.join-us .jd-detail .jd-secsubtitle {
+    margin-top: 13px;
+}
+
+.join-us .jd-detail .line {
+    line-height: 18px;
+}
+
+.join-us .btn {
+    background: none;
+    border: none;
+    display: inline-block;
+    outline: none;
+    margin-top: 240px;
+}
+
+.join-us .btn i {
+    font-size: 40px;
+}
+
+.join-us .btn-left {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.join-us .btn-right {
+    float: right;
+    margin-left: 41px;
+}
+
+.works {
+    padding: 40px 150px 87px 152px;
+}
+
+.works .main-content {
+    width: 1126px;
+}
+
+.works .section-title {
+    margin-left: 38px;
+}
+
+.works ul {
+    margin-top: 46px;
+}
+
+.works ul li {
+    display: inline-block;
+    width: 206px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.works ul li:not(:first-child) {
+    margin-left: 24px;
+}
+
+.works ul li img {
+    width: 230px;
+}
+
+.works ul li p {
+    font-size: 12px;
+    color: #A9A9A9;
+    line-height: 17px;
+}
+
+.works ul li .movie-title {
+    font-size: 14px;
+    color: #6F6F6F;
+    display: block;
+}
+
+.contact .official {
+    margin-top: 40px;
+    margin-left: 392px;
+}
+
+.contact .official .key {
+    font-size: 18px;
+    color: #757575;
+    margin-right: 16px;
+}
+
+.contact .official .number {
+    color: #4A4A4A;
+    font-size: 28px;
+}
+
+.contact .official .mail-area {
+    margin-top: 5px;
+}
+
+.contact .official .mail {
+    color: #4A4A4A;
+    font-size: 18px;
+}
+
+.contact .line {
+    width: 1180px;
+    height: 2px;
+    background: #EFEFEF;
+    margin-top: 42px;
+}
+
+.contact .contact-infos {
+    margin-top: 25px;
+}
+
+.contact .contact-infos .info {
+    display: inline-block;
+    width: 273px;
+    color: #757575;
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 12px;
+}
+
+.contact .contact-infos .info .proj {
+    font-weight: bold;
+}
+
+.contact .contact-infos .info:first-child {
+    margin-left: 155px;
+}
+
+.contact .imgs {
+    margin-top: 34px;
+}
+
+.contact .imgs .qrs {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 154px;
+}
+
+.contact .imgs .qrs img {
+    width: 400px;
+}
+
+.contact .imgs .map {
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 47px;
+}
+
+.contact .imgs .map img {
+    width: 370px;
+}
+
+.contact .imgs .map p {
+    font-size: 14px;
+    color: #757575;
+    line-height: 25px;
+}
+
+.links {
+    font-size: 14px;
+    color: #B2B2B2;
+    padding-top: 90px;
+    padding-bottom: 20px;
+}
+
+.links .main-content {
+    width: 1180px;
+}
+
+.links ul {
+    display: inline-block;
+}
+
+.links ul li {
+    margin-left: 40px;
+    display: inline-block;
+}
+
+.links ul li a {
+    color: #757575;
+}

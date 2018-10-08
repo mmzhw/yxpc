@@ -1,0 +1,110 @@
+.wrapper {
+    width: 100%;
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+}
+
+.swiperWrapper .swiperSlide {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.swiperWrapper .swiperSlide img {
+    height: 480px;
+}
+
+.swiperWrapper .swiperWidth {
+    width: 100%;
+}
+
+.paginationWrapper {
+    position: absolute;;
+    width: 243px;
+    right: calc(50% - 590px);
+    height: calc(100% - 36px);
+    top: 36px;
+    z-index: 8;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination {
+    position: relative !important;
+    width: 100%;
+}
+
+.pagination li {
+    text-align: left;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+
+.pagination li p:nth-child(1) {
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    vertical-align: middle;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.pagination li p:nth-child(2) {
+    color: #808080;
+    font-size: 14px;
+}
+
+.pagination li.myBullet p:nth-child(2) {
+    display: none;
+}
+
+.pagination li.myBullet {
+    height: 40px;
+}
+
+.pagination li.myActive {
+    background-color: #fff;
+    height: 70px;
+}
+
+.pagination li.myActive p:nth-child(1) {
+    color: #FFBD00;
+    font-size: 24px;
+}
+
+.pagination li.myActive p:nth-child(2) {
+    display: block;
+}
+
+.pageBackgroud {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.indexBackgroud {
+    background: url('/static/image/HomePage/banner_bg.png') center no-repeat;
+}
+
+.paginationLine {
+    bottom: 30px;
+    width: 100%;
+    height: 4px;
+}
+
+.myBulletLine {
+    display: inline-block;
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgba(34, 34, 34, .5);
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.myActiveLine {
+}
+
+
